@@ -1,0 +1,9 @@
+/* Custom Global Transitions and Smooth Page Nav Animations */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background gradient glow overlay behind profile frames */
+.radial-glow {
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+}

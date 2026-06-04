@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Val | Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configure Tailwind custom theme extensions
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        lightBg: '#f8fafc',
+                        lightCard: '#ffffff',
+                        lightBorder: '#e2e8f0',
+                        darkBg: '#06070b',
+                        darkCard: '#0b0d16',
+                        darkSidebar: '#090a0f',
+                        darkBorder: '#161925',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-lightBg dark:bg-darkBg text-slate-700 dark:text-slate-300 flex font-sans transition-colors duration-300">
+
+    
+    <aside class="w-64 border-r border-lightBorder dark:border-darkBorder bg-white dark:bg-darkCard flex flex-col justify-between p-6 fixed h-screen hidden md:flex z-20">
+        <div>
+            
+            <div class="text-2xl font-bold tracking-wider mb-10 text-slate-900 dark:text-white">
+                C<span class="text-indigo-500">V</span>
+            </div>
+            
+            
+            <nav class="space-y-2">
+                <a href="#home" class="flex items-center gap-4 px-4 py-3 bg-indigo-50 dark:bg-[#131625] text-indigo-600 dark:text-white rounded-lg text-sm font-medium transition">
+                    <i class="fa-solid fa-house text-indigo-500"></i> Home
+                </a>
+                <a href="#about" class="flex items-center gap-4 px-4 py-3 hover:bg-slate-100 dark:hover:bg-[#131625] hover:text-slate-900 dark:hover:text-white rounded-lg text-sm font-medium text-slate-500 dark:text-slate-400 transition">
+                    <i class="fa-solid fa-user"></i> About Me
+                </a>
+                <a href="#skills" class="flex items-center gap-4 px-4 py-3 hover:bg-slate-100 dark:hover:bg-[#131625] hover:text-slate-900 dark:hover:text-white rounded-lg text-sm font-medium text-slate-500 dark:text-slate-400 transition">
+                    <i class="fa-solid fa-code"></i> Skills
+                </a>
+                <a href="#projects" class="flex items-center gap-4 px-4 py-3 hover:bg-slate-100 dark:hover:bg-[#131625] hover:text-slate-900 dark:hover:text-white rounded-lg text-sm font-medium text-slate-500 dark:text-slate-400 transition">
+                    <i class="fa-solid fa-folder-open"></i> Projects
+                </a>
+                <a href="#experience" class="flex items-center gap-4 px-4 py-3 hover:bg-slate-100 dark:hover:bg-[#131625] hover:text-slate-900 dark:hover:text-white rounded-lg text-sm font-medium text-slate-500 dark:text-slate-400 transition">
+                    <i class="fa-solid fa-briefcase"></i> Experience
+                </a>
+            </nav>
+        </div>
+
+        
+        <div class="text-xs text-slate-400 dark:text-slate-600">
+            <p>© 2026 Chris Val</p>
+            <p>All rights reserved.</p>
+        </div>
+    </aside>
+
+    
+    <main class="flex-1 md:ml-64 p-6 lg:p-12 max-w-7xl mx-auto w-full space-y-24 relative">
+        
+        
+        <div class="absolute top-6 right-6 lg:right-12 z-30">
+            <button id="themeToggle" class="p-2.5 rounded-xl border border-lightBorder dark:border-[#22263f] bg-white dark:bg-[#11131f] text-slate-700 dark:text-amber-400 hover:bg-slate-100 dark:hover:bg-[#191c2e] transition shadow-sm" aria-label="Toggle Theme">
+                <i id="themeIcon" class="fa-solid fa-sun"></i>
+            </button>
+        </div>
+
+        
+        <section id="home" class="relative flex flex-col lg:flex-row items-center justify-between pt-10 gap-10">
+            <div class="space-y-6 max-w-xl z-10 order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-50 dark:bg-[#0f1715] border border-emerald-200 dark:border-emerald-900/30 rounded-full text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Available for new opportunities
+                </div>
+
+                <div class="space-y-2">
+                    <span class="text-indigo-600 dark:text-indigo-400 font-semibold tracking-wide">Hi, I'm</span>
+                    <h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                        Chris <span class="text-indigo-600 dark:text-indigo-500">Val</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl font-medium text-slate-600 dark:text-slate-400">Software Engineer</p>
+                </div>
+
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-base lg:text-lg">
+                    I build scalable, efficient, and user-focused web applications with clean code and modern technologies.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                     <a href="#projects" class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-lg font-medium transition shadow-md shadow-indigo-600/10">
+                     View My Work <i class="fa-solid fa-arrow-right text-xs"></i>
+                     </a>
+    
+                    <a href="mailto:your.email@example.com?subject=Project%20Inquiry%20-%20Software%20Development&body=Hello%20Chris%20Val,%0A%0AI%20stumbled%20upon%20your%20portfolio%20and%20I%20am%20interested%20in%20discussing%20a%20project%20with%20you.%20" 
+                      class="flex items-center gap-2 bg-white dark:bg-transparent text-slate-700 dark:text-slate-300 border border-lightBorder dark:border-[#22263f] px-6 py-3 rounded-lg font-medium transition hover:bg-slate-50 dark:hover:bg-[#11131f]">
+                     Contact Me <i class="fa-solid fa-envelope text-xs"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            
+            <div class="relative w-64 h-64 lg:w-80 lg:h-80 flex-shrink-0 order-1 lg:order-2">
+                <div class="absolute inset-0 bg-gradient-to-tr from-indigo-600/20 to-transparent rounded-full blur-3xl"></div>
+                <div class="w-full h-full bg-slate-200 dark:bg-[#11131f] rounded-2xl border border-lightBorder dark:border-[#1d2136] overflow-hidden shadow-inner">
+                    
+                    <img src="portrait..jpeg" alt="Chris Val" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white dark:bg-darkCard border border-lightBorder dark:border-darkBorder p-6 rounded-xl shadow-sm">
+            <div class="flex items-center gap-4 p-2">
+                <div class="p-3.5 bg-indigo-50 dark:bg-[#131625] rounded-xl text-indigo-600 dark:text-indigo-400"><i class="fa-solid fa-calendar-days fa-lg"></i></div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">2+</h3>
+                    <p class="text-xs text-slate-500 font-medium">Years Experience</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 p-2">
+                <div class="p-3.5 bg-indigo-50 dark:bg-[#131625] rounded-xl text-indigo-600 dark:text-indigo-400"><i class="fa-solid fa-code-branch fa-lg"></i></div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">15+</h3>
+                    <p class="text-xs text-slate-500 font-medium">Projects Completed</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 p-2">
+                <div class="p-3.5 bg-indigo-50 dark:bg-[#131625] rounded-xl text-indigo-600 dark:text-indigo-400"><i class="fa-solid fa-user-group fa-lg"></i></div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">25+</h3>
+                    <p class="text-xs text-slate-500 font-medium">Happy Clients</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 p-2">
+                <div class="p-3.5 bg-indigo-50 dark:bg-[#131625] rounded-xl text-indigo-600 dark:text-indigo-400"><i class="fa-solid fa-rocket fa-lg"></i></div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">12+</h3>
+                    <p class="text-xs text-slate-500 font-medium">Technologies</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="about" class="grid lg:grid-cols-12 gap-12 pt-4">
+            <div class="lg:col-span-5 space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 dark:text-white border-b-2 border-indigo-500 pb-2 inline-block">About Me</h2>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                    I'm a Software Engineer with 2+ years of experience building robust web applications and APIs. I specialize in JavaScript technologies across the full stack (React, Node.js, TypeScript, AWS).
+                </p>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                    I'm passionate about clean code, system design, and delivering exceptional user experiences.
+                </p>
+            </div>
+
+            <div id="skills" class="lg:col-span-7 space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 dark:text-white border-b-2 border-indigo-500 pb-2 inline-block">Skills</h2>
+                
+                <div id="skillsGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+            </div>
+        </section>
+
+        
+        <section id="projects" class="space-y-6">
+            <div class="flex justify-between items-end">
+                <h2 class="text-xl font-bold text-slate-900 dark:text-white border-b-2 border-indigo-500 pb-2 inline-block">Featured Projects</h2>
+                <span class="text-sm text-indigo-600 dark:text-indigo-400 font-medium cursor-pointer flex items-center gap-1 hover:underline">
+                    View all projects <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </span>
+            </div>
+
+            
+            <div id="projectsGrid" class="grid md:grid-cols-3 gap-6"></div>
+        </section>
+
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
